@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,8 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "npm": "^5.8.0"
-  }
+    "npm": "^5.8.0",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
